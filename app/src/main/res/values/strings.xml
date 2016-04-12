@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sonifikacja</string>
+    <string name="action_settings">Settings</string>
+
+    //MENU
+    <string name="menu_autosonification">Przejdź do autosonifikacji na podstawie ostatnio zarejestrowanych danych</string>
+    <string name="menu_interactive_sonification">Przejdź do sonifikacji interaktywnej</string>
+    <string name="menu_configuration">Przejdź do konfiguracji oprogramowania</string>
+    <string name="menu_mode">Wybierz w jakim trybie chcesz pracować</string>
+    <string name="menu_free_mode">Przejdź do trybu swobodnego</string>
+    <string name="menu_supervised_mode">Przejdź do trybu nadzorowanego</string>
+    <string name="menu_tutorial_mode">Przejdź do trybu samouczka</string>
+
+</resources>
