@@ -11,4 +11,13 @@
     <string name="menu_supervised_mode">Przejdź do trybu nadzorowanego</string>
     <string name="menu_tutorial_mode">Przejdź do trybu samouczka</string>
 
+    <string name="title_activity_first_sonification">FirstSonificationActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_second_sonification1">SecondSonification1Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

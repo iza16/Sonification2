@@ -1,23 +1,21 @@
-package com.example.iza.sonifikacja.view.activity;
+package com.example.iza.sonifikacja.view.surface;
 
 import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 
 import com.example.iza.sonifikacja.R;
-import com.example.iza.sonifikacja.interfaces.MenuDimensions;
+import com.example.iza.sonifikacja.view.activity.MainActivity;
 import com.example.iza.sonifikacja.view.viewer.MenuView;
 
-public class ChooseModeActivity extends MenuView {
+public class ChooseModeSurfaceView extends MenuView {
 
     public boolean isFreeMode = false;
     public boolean isSupervisedMode = false;
     public boolean isTutorialMode = false;
 
-    public ChooseModeActivity(Context context, MainActivity mainActivity) {
+    public ChooseModeSurfaceView(Context context, MainActivity mainActivity) {
         super(context);
 
         DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
@@ -93,7 +91,7 @@ public class ChooseModeActivity extends MenuView {
             if(getWindowWidth()/3 < x && x < (2*getWindowWidth()/3))
             {
                 Log.i("informacja", getContext().getString(R.string.menu_supervised_mode));
-                getMainActivity().setContentView(new SupervisedModeActivity(getContext()));
+                getMainActivity().setContentView(new SupervisedModeSurfaceView(getContext()));
             }
 
             if(x >= (2*getWindowWidth()/3))
