@@ -3,9 +3,12 @@ package com.example.iza.sonifikacja.view.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 
+import com.example.iza.sonifikacja.server.DownloadImageClass;
 import com.example.iza.sonifikacja.sound.TTSClass;
 import com.example.iza.sonifikacja.view.surface.StartSurfaceView;
 
@@ -13,7 +16,7 @@ public class MainActivity extends Activity {
 
 
     private TTSClass mTTS;
-
+    public static DownloadImageClass downloadImageClass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +29,12 @@ public class MainActivity extends Activity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         setTTS(new TTSClass(this));
-        setContentView(new StartSurfaceView(this.getApplicationContext(),this));
 
+        downloadImageClass = new DownloadImageClass(getApplicationContext());
+
+
+        setContentView(new StartSurfaceView(this.getApplicationContext(), this));
+        Log.i("","");
 
     }
 

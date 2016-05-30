@@ -1,6 +1,7 @@
 package com.example.iza.sonifikacja.view.fragment;
 
 import android.annotation.TargetApi;
+import android.graphics.PixelFormat;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -38,13 +39,14 @@ public class DisplayImageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             imageSize = getArguments().getInt(WIDTH);
             pictureName = getArguments().getString(PICTURE_NAME);
         }
     }
 
-    @Override
+       @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -75,8 +77,8 @@ public class DisplayImageFragment extends Fragment {
                 return true;
             }
         });
-            return view;
-        }
+        return view;
+    }
 
 
 
